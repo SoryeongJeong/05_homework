@@ -5,10 +5,20 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i;
-	for (i=0; i<10; i++)
-		printf("Hello World!\n");
-		
+	char c;
+	int num = 0;
+	
+	printf("input a spring : ");
+	
+	while((c=getchar()) != '\n')
+		{
+			if (c >= '0' && c<='9')
+				{
+					num++;
+				}
+				
+			} 
+	printf("the number of digits is %d", num);
 	
 	return 0;
 }
