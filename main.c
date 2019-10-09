@@ -10,9 +10,11 @@ int main(int argc, char *argv[]) {
 	scanf("%d", &x);
 	
 	if (x>0)
-		printf("|x| is %d", x);
-	else 
-		printf("|x| is %d", -x);
+		printf("x is positive");
+	else if (x<0)
+		printf("x is non-positive");
+	else
+		printf("x is zero");
 
 
 	
